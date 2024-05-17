@@ -2,9 +2,9 @@
 #define PRINTOPERATORUNIT_H
 
 #include "unit.h"
+#include "abstractoperatorunit.h"
 
-
-class PrintOperatorUnit : public AbstractPrintOperatorUnit
+class PrintOperatorUnit : public AbstractOperatorUnit
 {
 public:
     explicit PrintOperatorUnit(const std::string& text);

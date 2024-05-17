@@ -2,6 +2,7 @@
 #define METHODUNIT_H
 
 #include "unit.h"
+#include "abstractmethodunit.h"
 #include <vector>
 
 

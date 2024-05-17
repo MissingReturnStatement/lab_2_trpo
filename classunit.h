@@ -1,6 +1,7 @@
 #ifndef CLASSUNIT_H
 #define CLASSUNIT_H
 
+#include "abstractclassunit.h"
 #include <vector>
 #include <QObject>
 
