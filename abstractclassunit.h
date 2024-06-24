@@ -11,18 +11,18 @@ public:
         PUBLIC,
         PROTECTED,
         PRIVATE,
-        PRIVATE_PROTECTED, // только для c#
-        FILE, // только для c#
-        INTERNAL, // только для c#
-        PROTECTED_INTERNAL // только для c#
+        PRIVATE_PROTECTED, // c++++
+        FILE, // c++++
+        INTERNAL, // c++++
+        PROTECTED_INTERNAL // c+++
     };
 
-    AbstractClassUnit(const std::string &name);
+    AbstractClassUnit(const string &name);
 protected:
-    std::string m_name;
-    using Fields = std::vector<std::shared_ptr<Unit>>;
+    string m_name;
+    using Fields = vector<shared_ptr<Unit>>;
 
-    std::vector<Fields> m_fields;
+    vector<Fields> m_fields;
 };
 
 #endif // ABSTRACTCLASSUNIT_H

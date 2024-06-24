@@ -1,21 +1,19 @@
-#ifndef CLASSUNIT_H
-#define CLASSUNIT_H
+#ifndef SHARPCLASSUNIT_H
+#define SHARPCLASSUNIT_H
 
 #include "abstractclassunit.h"
-#include <vector>
 #include <QObject>
 
-class ClassUnit : public AbstractClassUnit
+class SharpClassUnit : public AbstractClassUnit
 {
 public:
     static const vector<string> ACCESS_MODIFIERS;
 
-    explicit ClassUnit(const string& name);
+    explicit SharpClassUnit(const string &name);
 
     void add(const shared_ptr<Unit>& unit, Flags flags) override;
 
     string compile(unsigned int level = 0) const override;
 };
 
-
-#endif // CLASSUNIT_H
+#endif // SHARPCLASSUNIT_H

@@ -6,10 +6,10 @@
 class AbstractOperatorUnit : public Unit
 {
 public:
-    AbstractOperatorUnit(const std::string& text);
+    AbstractOperatorUnit(const string& text);
 
 protected:
-    std::string m_text;
+    string m_text;
 };
 
 #endif // ABSTRACTOPERATORUNIT_H

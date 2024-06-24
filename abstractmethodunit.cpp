@@ -1,6 +1,6 @@
 #include "abstractmethodunit.h"
 
-AbstractMethodUnit::AbstractMethodUnit(const std::string &name, const std::string &returnType, Flags flags)
+AbstractMethodUnit::AbstractMethodUnit(const string &name, const string &returnType, Flags flags)
 {
     m_name = name;
     m_returnType = returnType;

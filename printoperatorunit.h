@@ -7,9 +7,9 @@
 class PrintOperatorUnit : public AbstractOperatorUnit
 {
 public:
-    explicit PrintOperatorUnit(const std::string& text);
+    explicit PrintOperatorUnit(const string& text);
 
-    std::string compile(unsigned int level = 0) const override;
+    string compile(unsigned int level = 0) const override;
 };
 
 #endif // PRINTOPERATORUNIT_H

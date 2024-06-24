@@ -15,12 +15,12 @@ public:
         ABSTRACT = 1 << 4,
     };
 
-    AbstractMethodUnit(const std::string& name, const std::string& returnType, Flags flags);
+    AbstractMethodUnit(const string& name, const string& returnType, Flags flags);
 protected:
-    std::string m_name;
-    std::string m_returnType;
+    string m_name;
+    string m_returnType;
     Flags m_flags;
-    std::vector<std::shared_ptr<Unit>> m_body;
+    vector<shared_ptr<Unit>> m_body;
 };
 
 #endif // ABSTRACTMETHODUNIT_H

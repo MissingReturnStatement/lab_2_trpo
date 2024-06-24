@@ -1,6 +1,6 @@
 #include "AbstractClassUnit.h"
 
-AbstractClassUnit::AbstractClassUnit(const std::string &name)
+AbstractClassUnit::AbstractClassUnit(const string &name)
 {
     m_name = name;
 }

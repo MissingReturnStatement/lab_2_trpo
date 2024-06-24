@@ -1,14 +1,14 @@
-#include "methodunit.h"
+#include "sharpmethodunit.h"
 
-MethodUnit::MethodUnit(const string &name, const string &returnType, Flags flags)
-    : AbstractMethodUnit(name, returnType, flags){}
+SharpMethodUnit::SharpMethodUnit(const string& name, const string& returnType, Flags flags)
+    :AbstractMethodUnit(name, returnType, flags){}
 
-void MethodUnit::add(const shared_ptr<Unit> &unit, Flags)
+void SharpMethodUnit::add(const shared_ptr<Unit> &unit, Flags)
 {
     m_body.push_back(unit);
 }
 
-string MethodUnit::compile(unsigned int level) const
+string SharpMethodUnit::compile(unsigned int level) const
 {
     string result = generateShift(level);
     if(m_flags & STATIC){
@@ -19,7 +19,7 @@ string MethodUnit::compile(unsigned int level) const
     result += m_returnType + " ";
     result += m_name + " () ";
     if(m_flags & CONST){
-        result += " const";
+        qDebug("C# has not const modifier");
     }
     result += " {\n";
     for(const auto& b : m_body){
